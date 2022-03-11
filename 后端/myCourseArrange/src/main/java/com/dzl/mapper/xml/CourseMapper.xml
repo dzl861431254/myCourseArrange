@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dzl.mapper.CourseMapper">
+    <insert id="insertCourse" parameterType="com.dzl.entity.Professor">
+        Insert into course(course_id,course_code,professor_ids,p_id,create_time,deleted,update_time,version,course_name)
+        Values(#{courseId},#{courseCode},null,#{pId},#{createTime},#{deleted},#{updateTime},#{version},#{courseName})
+    </insert>
+
+
+</mapper>
